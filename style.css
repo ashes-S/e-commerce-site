@@ -1,0 +1,410 @@
+html, body{
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 98.9vw;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    height: 7%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+}
+
+.nav1div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+}
+.nav1div>a:nth-child(1){
+    width: 11%;
+    height: 91%;
+}
+.logo{
+    width: 97%;
+    height: 90%;
+}
+.nav1div>button{
+    width: 20%;
+    height: 50%;
+    background-color: black;
+    color: white;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 3.4px;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+.nav1div button:active{
+    display: block;
+    animation-name: flip;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+@keyframes flip{
+    5%{
+        width: 2%;
+    }
+    50%{
+        width: 0%;
+    }
+    100%{
+        width: 2%;
+    }
+}
+
+.nav2div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 7%;
+}
+
+.cart{
+    height: 65%;
+    width: 90%;
+}
+.cart>img{
+    height: 92%;
+    width: 60%;
+    border-radius: 55%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.art1{
+    display: flex;
+    justify-content: center;
+    height: 70%;
+    width: 100%;
+    background-image: linear-gradient(rgba(61, 36, 3, 0.932), rgb(63, 61, 60));
+}
+
+.art1_intro_div{
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.art1_intro_div>img{
+    height: 40%;
+}
+
+.art1_intro_div>button{
+    height: 12%;
+    width: 100%;
+    font-size: 150%;
+    border-radius: 10%;
+    border-style: none;
+    color: rgba(179, 146, 3, 0.767);
+    background-color: rgb(139, 70, 6);
+    cursor: pointer;
+}
+
+
+.art2{
+    height: 80%;
+    width: 100%;
+    background-image: url(/img/try.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 90%;
+}
+
+
+.art3{
+    height: 38%;
+    width: 100%;
+    background-color: rgba(88, 55, 11, 0.897);
+    text-align: center;
+}
+
+.art3>img{
+    height: 100%;
+    width: 55%;
+    clip-path: inset(6% 1.95% 6% 2%);
+    border-radius: 16%;
+}
+
+
+.s2art1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92%;
+    width: 100%;
+    background-image: url(/img/bgProd.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+}
+
+.products{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+}
+
+.products>figure{opacity: 0;}
+
+.sec2:hover .products{
+    position: absolute; 
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.sec2:hover .prod1{
+    position: relative;
+    animation-name: slide1;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    opacity: 0;
+}
+
+.sec2:hover .prod2{
+    position: relative;
+    animation-name: slide2;
+    animation-duration: 6s;
+    animation-delay: 5ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    opacity: 0;
+}
+
+.sec2:hover .prod3{
+    position: relative;
+    animation-name: slide3;
+    animation-duration: 6s;
+    animation-delay: 10ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    opacity: 0;
+}
+
+.sec2:hover .prod4{
+    position: relative;
+    animation-name: slide4;
+    animation-duration: 6s;
+    animation-delay: 15ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    opacity: 0;
+}
+
+.sec2:hover .prod5{
+    position: relative;
+    animation-name: slide5;
+    animation-duration: 6s;
+    animation-delay: 20ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    opacity: 0;
+}
+
+@keyframes slide1{
+    0%{
+        right: -100%;
+        opacity: 100;
+    }
+    100%{
+        right: 140%;
+    }
+}
+
+@keyframes slide2{
+    0%{
+        right: -100%;
+        opacity: 100;
+    }
+    100%{
+        right: 130%;
+    }
+}
+@keyframes slide3{
+    0%{
+        right: -100%;
+        opacity: 100;
+    }
+    100%{
+        right: 120%;
+    }
+}
+@keyframes slide4{
+    0%{
+        right: -100%;
+        opacity: 100;
+    }
+    100%{
+        right: 110%;
+    }
+}
+@keyframes slide5{
+    0%{
+        right: -100%;
+        opacity: 100;
+    }
+    100%{
+        right: 100%;
+    }
+}
+
+
+
+.products>figure{
+    height: 100%;
+    width: 16%;
+}
+.products>figure>img{
+    border-radius: 20%;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.s2art2{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 78%;
+    width: 100%;
+    background-image: linear-gradient(rgba(66, 39, 5, 0.932), rgba(107, 72, 7, 0.836));
+}
+
+.s2art2 input, textarea{
+    border-style: unset;
+    border-color: black;
+    border-width: 3.5px 2px 3.5px 2px;
+    border-bottom-right-radius: 6%;
+    border-style: groove;
+    font-size: 115%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    font-weight: 600;
+
+}
+
+.s2art2>h1{
+    font-size: 250%;
+}
+
+figure{
+    height: 10%;
+    width: 60%;
+    display: flex;
+    justify-content: left;
+}
+
+.name{
+    width: 40%;
+    height: 74%;
+}
+
+.email{
+    width: 40%;
+    height: 74%;
+}
+
+.sub{
+    width: 60%;
+    height: 10%;
+}
+
+.s2art2>textarea{
+    height: 40%;
+    width: 60%;
+}
+
+.btn{
+    height: 15%;
+    width: 15%;
+    font-size: 170% !important;
+    background-color: rgb(82, 64, 7);
+    border-radius: 5% !important;
+    cursor: pointer;
+}
+
+
+.map{
+    height: 57%;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+}
+
+.map>iframe{
+    border-style: unset;
+    width: 100%;
+    height: 98%;
+}
+
+
+
+footer{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 35%;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(59, 46, 20), rgba(107, 72, 7, 0.836));
+}
+
+figure{
+    display: flex;
+    width: 70%;
+    height: 25%;
+    justify-content: space-evenly;
+
+}
+
+footer h4{font-size: 75%;
+font-weight: 500;}
+
+footer h3{border-bottom: solid black 3.5px;}
+
+figure button{
+    height: 100%;
+    width: 20%;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+footer button{
+    border-style: none;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    font-size: 85%;
+    font-family: Georgia;
+    background-image: linear-gradient(to left, rgba(78, 46, 7, 0.932), rgba(107, 72, 7, 0.836));
+}
